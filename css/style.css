@@ -1,0 +1,184 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #666;
+    height: fit-content;
+}
+
+
+/* ==== SECTION ABOUT ME ==== */
+
+#main-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-about-me {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 7%;
+    background: #666;
+    min-height: 70vh;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.section-about-me .content {
+    flex: 1 1 400px;
+}
+
+.section-about-me .profile-image {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.section-about-me .profile-image h4 {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border: 2px solid #2980b9;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.section-about-me .profile-image img {
+    width: 90%;
+    max-width: 200px;
+    align-items: center;
+    border: 2px solid #2980b9;
+    border-radius: 15px;
+}
+
+.section-about-me .content .title {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #2980b9;
+    text-align: center;
+}
+
+.section-about-me .content p {
+    color: white;
+    padding: 5px 0;
+}
+
+.section-about-me .content .count-down {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.section-about-me .content .box {
+    background: #fff;
+    border: 1px solid #3333;
+    text-align: center;
+    flex: 1 1 20px;
+}
+
+.section-about-me .content .box h3 {
+    font-size: 50px;
+    color: #333;
+}
+
+.section-about-me .content .box span {
+    color: #2980b9;
+    font-size: 20px;
+}
+/* ==== SECTION ABOUT ME ==== */
+
+
+/* ==== SECTION MY PYCTURES ==== */
+.section-mypictures {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    align-items: center;
+    margin-inline: auto;
+    margin-block: 20px;
+
+}
+
+.section-mypictures img {
+    width: 90%;
+    max-width: 200px;
+    align-items: center;
+    border: 2px solid #2980b9;
+    border-radius: 15px;
+}
+
+/* ==== SECTION MY PYCTURES ==== */
+
+
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 500px){
+
+    /* ==== SECTION ABOUT ME ==== */
+    .section-about-me {
+        padding: 20px;
+    }
+
+    .section-about-me .content {
+        text-align: center;
+    }
+
+    .section-about-me .content .title {
+        font-size: 35px;
+    }
+
+    .section-about-me .content p {
+        font-size: 14px;
+    }
+
+    .section-about-me .content .count-down {
+        gap: 5px;
+    }
+
+    .section-about-me .content .count-down .box h3 {
+        font-size: 30px;
+    }
+
+    .section-about-me .content .count-down .box span {
+        font-size: 15px;
+    }
+    /* ==== SECTION ABOUT ME ==== */
+
+
+
+    /* ==== SECTION MY PYCTURES ==== */
+
+    .section-mypictures {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 400px;
+        align-items: center;
+        margin-inline: auto;
+        margin-block: 20px;   
+    }
+    
+    .section-mypictures img {
+        width: 90%;
+        max-width: 200px;
+        align-items: center;
+        border: 2px solid #2980b9;
+        border-radius: 15px;
+        }
+
+    /* ==== SECTION MY PYCTURES ==== */
+}
+
+/* MEDIA QUERIES*/
