@@ -106,9 +106,13 @@ body {
     flex: 1 1 400px;
     align-items: center;
     margin-inline: auto;
-    margin-block: 20px;
-
 }
+
+audio {
+    visibility: visible;
+    margin-bottom: 20px;
+}
+
 
 .section-mypictures img {
     width: 90%;
