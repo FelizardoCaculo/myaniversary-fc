@@ -30,7 +30,7 @@ setInterval(function(){
 
 /* == IMAGE SLIDE SHOW FUNCTION == */
 let i = 0; //start point
-let time = 4000;
+let time = 2000;
 
 //Images List
 let images = [
