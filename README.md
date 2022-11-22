@@ -6,3 +6,6 @@ This project was created to show a countdown of my birthday with a slide show im
 Visit us:
 
 https://felizardocaculo.github.io/myaniversary-fc/
+
+https://felizardocaculo-aniversary.netlify.app/
+
