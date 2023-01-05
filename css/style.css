@@ -17,23 +17,35 @@ body {
 /* ==== SECTION ABOUT ME ==== */
 
 #main-container {
-    margin: 0;
-    padding: 0;
+    max-width: 780px;
     box-sizing: border-box;
+    display: block;
+    margin-inline: auto;
 }
 .section-about-me {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    padding: 15px 7%;
     background: #666;
-    min-height: 70vh;
-    gap: 15px;
-    padding-bottom: 40px;
+    height: 100vh;
+}
+
+.count-down-container {
+    padding: 2rem;
 }
 
 .section-about-me .content {
     flex: 1 1 400px;
+}
+
+.pictures-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .section-about-me .profile-image {
