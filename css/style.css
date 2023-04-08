@@ -1,3 +1,8 @@
+:root {
+    --bg-color: #C9C9C9;
+    --main-color: #0C3869;
+    --text-color: #030F1C;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,20 +12,17 @@
     border: none;
     text-decoration: none;
 }
-
 body {
-    background-color: #666;
+    background-color: var(--bg-color);
     height: fit-content;
 }
-
-
 /* ==== SECTION ABOUT ME ==== */
-
 #main-container {
     max-width: 780px;
     box-sizing: border-box;
     display: block;
     margin-inline: auto;
+    padding-block: 5rem;
 }
 .section-about-me {
     width: 100%;
@@ -29,25 +31,20 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    background: #666;
-    height: 100vh;
+    background: var(--bg-color);
 }
-
 .count-down-container {
     padding: 2rem;
 }
-
 .section-about-me .content {
     flex: 1 1 400px;
 }
-
 .pictures-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
-
 .section-about-me .profile-image {
     display: flex;
     flex-direction: column;
@@ -55,62 +52,51 @@ body {
     align-items: center;
     margin-inline: auto;
 }
-
 .section-about-me .profile-image h4 {
     text-align: center;
-    color: white;
+    color: var(--text-color);
     padding: 5px;
-    border: 2px solid #2980b9;
+    border: 2px solid var(--main-color);
     border-radius: 15px;
     margin-bottom: 5px;
     text-transform: capitalize;
 }
-
 .section-about-me .profile-image img {
     width: 90%;
     max-width: 200px;
     align-items: center;
-    border: 2px solid #2980b9;
+    border: 2px solid var(--main-color);
     border-radius: 15px;
 }
-
 .section-about-me .content .title {
     font-size: 45px;
     text-transform: uppercase;
-    color: #2980b9;
+    color: var(--main-color);
     text-align: center;
 }
-
 .section-about-me .content p {
-    color: white;
-    padding: 5px 0;
+    color: var(--text-color);
+    padding: 2rem 0;
 }
-
 .section-about-me .content .count-down {
     display: flex;
     gap: 15px;
     padding: 10px 0;
 }
-
 .section-about-me .content .box {
     background: #fff;
     border: 1px solid #3333;
     text-align: center;
     flex: 1 1 20px;
 }
-
 .section-about-me .content .box h3 {
     font-size: 50px;
-    color: #333;
+    color: var(--text-color);
 }
-
 .section-about-me .content .box span {
-    color: #2980b9;
+    color: var(--main-color);
     font-size: 20px;
 }
-/* ==== SECTION ABOUT ME ==== */
-
-
 /* ==== SECTION MY PYCTURES ==== */
 .section-mypictures {
     display: flex;
@@ -119,64 +105,52 @@ body {
     align-items: center;
     margin-inline: auto;
 }
-
-audio {
-    visibility: visible;
-    margin-bottom: 20px;
-}
-
-
 .section-mypictures img {
-    width: 90%;
-    max-width: 200px;
+    width: 100%;
     align-items: center;
-    border: 2px solid #2980b9;
+    border: 2px solid var(--main-color);
     border-radius: 15px;
 }
-
-/* ==== SECTION MY PYCTURES ==== */
-
-
-
-
+footer {
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+footer a{
+    color: var(--main-color);
+}
 /* MEDIA QUERIES*/
-
 @media (max-width: 500px){
-
-    /* ==== SECTION ABOUT ME ==== */
+    #main-container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        padding-block: 3rem auto;
+        margin: auto;
+    }
     .section-about-me {
         padding: 20px;
     }
-
     .section-about-me .content {
         text-align: center;
     }
-
     .section-about-me .content .title {
         font-size: 35px;
     }
-
     .section-about-me .content p {
         font-size: 14px;
     }
-
     .section-about-me .content .count-down {
         gap: 5px;
     }
-
     .section-about-me .content .count-down .box h3 {
         font-size: 30px;
     }
-
     .section-about-me .content .count-down .box span {
         font-size: 15px;
     }
-    /* ==== SECTION ABOUT ME ==== */
-
-
-
     /* ==== SECTION MY PYCTURES ==== */
-
     .section-mypictures {
         display: flex;
         flex-direction: column;
@@ -184,17 +158,33 @@ audio {
         align-items: center;
         margin-inline: auto;
         margin-block: 20px;   
-    }
-    
+    }    
     .section-mypictures img {
-        width: 90%;
-        max-width: 200px;
+        width: 100%;
+        max-width: 150px;
+        align-items: center;
+        border-radius: 15px;
+    }
+}
+@media (max-width: 390px){    
+    /* ==== SECTION MY PYCTURES ==== */
+    .pictures-container {
+        display: flex;
+        margin: auto;
+    }
+    .section-mypictures {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 400px;
+        align-items: center;
+        margin-inline: auto;
+        margin-block: 20px;   
+    }    
+    .section-mypictures img {
+        width: 100%;
+        max-width: 150px;
         align-items: center;
         border: 2px solid #2980b9;
         border-radius: 15px;
         }
-
-    /* ==== SECTION MY PYCTURES ==== */
 }
-
-/* MEDIA QUERIES*/
